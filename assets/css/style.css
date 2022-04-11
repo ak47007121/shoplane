@@ -25,9 +25,10 @@ header{
     background-color: #fff;
 }
 header h4{
-    font-size: 2rem;
+    font-size: 30px;
     color: #009688;
     font-weight: 500;
+    letter-spacing: 2px;
 }
 header h4 span{
     margin-left: 0;
@@ -160,7 +161,7 @@ header ul li a:hover{
         margin-right: 15px;
     }
     #cart-count{
-        margin-left: -15px;
+        margin-left: -22px;
     }
     .hamburger{
         padding-top: 2px;
@@ -185,7 +186,6 @@ header ul li a:hover{
 #features{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 .feature-container{
     width: 200px;
@@ -233,11 +233,6 @@ header ul li a:hover{
     color: rgb(27, 25, 25);
     position: absolute;
     top: 80%;
-}
-@media screen and (max-width:799px) {
-    .feature-container{
-        width: 50%;
-    }
 }
 @media screen and (max-width: 425px) {
     #features {
@@ -482,8 +477,9 @@ footer ul li a:hover, footer ul li:hover{
     letter-spacing: -2px;
 }
 #cart-container{
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 #checkout{
     width: 52%;
@@ -569,22 +565,27 @@ footer ul li a:hover, footer ul li:hover{
     }
 }
 @media screen and (max-width: 910px){
-    .cart-card {
-        width: 600px;
-        margin:0;
-    }
     #cart-container{
+        flex-direction: column;
         width: 100%;
         margin-top: 60px;
+    }
+    .cart-card {
+        width: 100%;
+        margin:0;
+    }
+    #checkout{
+        width: 100%;
+    }
+    .cart-items{
+        width: 100%;
+    }
+    .item{
+        width: 100%;
     }
     #place-order{
         width: 100%;
         margin-top: 60px;
-    }
-}
-@media screen and (max-width: 375px){
-    .cart-card {
-        width: 600px;
     }
 }
 .order-confirm{
